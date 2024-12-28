@@ -1,0 +1,130 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Using a new cool font from Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    background-image: url('https://cdn.fstoppers.com/styles/full/s3/media/2020/12/21/nando-vertical-horizontal-05.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.title-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.weather-details {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    display: none;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #4CAF50;
+}
+
+.weather-details h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.weather-info p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.weather-chart {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+}
+
+.weather-icon {
+    display: block;
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        padding: 60px;
+    }
+}
