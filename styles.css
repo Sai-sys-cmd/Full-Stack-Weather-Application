@@ -1,11 +1,9 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Using a new cool font from Google Fonts */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #121212;
